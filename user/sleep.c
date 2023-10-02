@@ -4,10 +4,9 @@
 
 int main(int argc, char *argv[])
 {
-  if (argc < 2) {
-
-  } else if (argc <= 0) {
-    write(1, "error", 5);
+  if(argc < 2){
+    exit(-1);
   }
-  exit(0);
+  sleep(atoi(argv[1]));
+  exit(1);
 }
